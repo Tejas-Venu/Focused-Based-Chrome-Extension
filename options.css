@@ -1,0 +1,162 @@
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #e8f3ea 0%, #f9fdf8 100%);
+  color: #2e4333;
+  height: 100vh;
+  display: flex;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+}
+
+.info-side {
+  flex: 1.2;
+  background: #4a7856;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      
+  align-items: center;          
+  text-align: center;           
+  box-shadow: 8px 0 20px rgba(0,0,0,0.15);
+}
+
+
+.info-side h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  margin-left: 20px;      
+}
+
+
+.illustration {
+  width: 220px;
+  opacity: 0.9;
+}
+
+
+.settings-side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px;
+  position: relative;
+}
+
+
+.header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #355c39;
+}
+.header p {
+  opacity: 0.7;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.add-bar {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-bar input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #c9dfcf;
+  background: #f4faf6;
+  font-size: 16px;
+}
+
+.add-bar input:focus {
+  outline: none;
+  border-color: #4a7856;
+}
+
+.btn.add {
+  background: #4a7856;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn.add:hover {
+  background: #3f664a;
+  transform: scale(1.05);
+}
+
+.chips-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  min-height: 160px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  background: rgba(74, 120, 86, 0.15);
+  border: 1px solid #c9dfcf;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #2e4333;
+  transition: 0.2s;
+  animation: fadeIn 0.2s ease;
+}
+
+.chip:hover {
+  background: rgba(74,120,86,0.25);
+}
+
+.remove {
+  background: #ef6060;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+.remove:hover {
+  background: #d44545;
+}
+
+.tip {
+  margin-top: 25px;
+  font-size: 13px;
+  opacity: 0.6;
+  text-align: center;        
+  width: 100%;             
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>StayFocused</title>
+  <link rel="stylesheet" href="popup.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #dfe9f3, #ffffff);
+      width: 280px;
+      margin: 0;
+      padding: 15px;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2c3e50;
+      font-size: 20px;
+    }
+
+    .row {
+      margin: 12px 0;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    input[type="number"] {
+      width: 80px;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      margin: 5px;
+      color: white;
+      transition: all 0.2s;
+    }
+
+    #startBtn {
+      background-color: #2ecc71;
+    }
+
+    #startBtn:disabled {
+      background-color: #95a5a6;
+      cursor: not-allowed;
+    }
+
+    #resetBtn {
+      background-color: #e74c3c;
+    }
+
+    button:hover:not(:disabled) {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    .timer {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .streak {
+      margin-top: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #e67e22;
+      background: rgba(230, 126, 34, 0.1);
+      padding: 6px 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .info {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .info a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    #lockedNote {
+      color: #e63946;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>StayFocused</h2>
+
+    <div class="row">
+      <label for="duration">Focus Duration (minutes)</label>
+      <input id="duration" type="number" min="1" value="1"/>
+    </div>
+
+    <div class="row">
+      <button id="startBtn">Start Session</button>
+      <button id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <div class="timer">
+    <span id="timeDisplay">00:00</span>
+    </div>
+
+    <div class="streak">
+    Current Streak: <span id="streak">0</span>
+    </div>
+
+    <div class="info">
+      <p><a id="optionsLink" href="options.html" target="_blank">Manage blocked sites</a></p>
+      <p id="lockedNote" style="display:none;">Disabled during focus session</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

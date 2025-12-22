@@ -1,0 +1,116 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(160deg, #e6f2e6 0%, #d2e6d0 50%, #bcd9b6 100%);
+  color: #1e3522;
+  width: 320px;
+  padding: 20px;
+  margin: 0;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 10px 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(60, 90, 60, 0.15);
+}
+
+.container h2 {
+  color: #245c35;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f4f35;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="number"] {
+  width: 90px;
+  padding: 6px;
+  border: 2px solid #74c69d;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 15px;
+  color: #1b4332;
+  background: #f9fff9;
+  transition: 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #2d6a4f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(45, 106, 79, 0.3);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1b4332;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #9fa9a3;
+  cursor: not-allowed;
+}
+
+/* timer & streak styling */
+.timer, .streak {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 16px;
+  background: #ecf7ed;
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: #205522;
+  box-shadow: 0 0 8px rgba(33, 90, 45, 0.15);
+  display: inline-block;
+  min-width: 150px;
+}
+
+/* link area */
+.info {
+  margin-top: 14px;
+}
+
+.info a {
+  text-decoration: none;
+  color: #245c35;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.info a:hover {
+  color: #1b4332;
+}
+
+#lockedNote {
+  display: none;
+  font-size: 13px;
+  color: #5a6b5e;
+  margin-top: 4px;
+}

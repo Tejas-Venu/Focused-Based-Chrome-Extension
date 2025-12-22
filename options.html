@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StayFocused – Blocked Sites</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <section class="info-side">
+      <h1>🌿 StayFocused</h1>
+      <p class="tagline">Cut the distraction. Stay productive.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3208/3208751.png" alt="focus illustration" class="illustration">
+    </section>
+
+    <section class="settings-side">
+
+      <div class="header">
+        <h2>Blocked Websites</h2>
+        <p>Manage distractions quickly — add or remove websites below.</p>
+      </div>
+
+      <div class="add-bar">
+        <input id="websiteInput" type="text" placeholder="e.g. facebook.com" />
+        <button id="addBtn" class="btn add">Add</button>
+      </div>
+
+      <div id="blockedListContainer" class="chips-area"></div>
+
+      <p class="tip">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tip: Domains only, no need for “https://” or “www.”</p>
+    </section>
+
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catch the Dots</title>
+  <link rel="stylesheet" href="break.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Catch the Dots 🍃</h1>
+    <p class="subtitle">Use ← → or A/D to move and catch the falling dots!</p>
+
+    <div class="score-box">
+      Highest Score: <span id="highScore">0</span> 🏆
+    </div>
+
+    <button id="startBtn" class="btn primary">Start Game</button>
+
+    <div id="gameArea" class="game-area hidden">
+      <div id="basket"></div>
+    </div>
+
+    <div class="stats">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time left: <span id="timer">20</span>s</p>
+    </div>
+  </div>
+
+  <script src="break.js"></script>
+</body>
+</html>
